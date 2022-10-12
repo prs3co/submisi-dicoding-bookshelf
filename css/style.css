@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F6FBF4;
+}
+
+.header {
+  background-color: #06283D;
+  box-sizing: border-box;
+  height: 5em;
+}
+
+.text-container {
+  color: #F6FBF4;
+  padding: 1em;
+}
+
+.column {
+  float: left;
+  box-shadow:
+  0px 0px 3.6px rgba(0, 0, 0, 0.024),
+  0px 0px 10px rgba(0, 0, 0, 0.035),
+  0px 0px 24.1px rgba(0, 0, 0, 0.046),
+  0px 0px 80px rgba(0, 0, 0, 0.07);
+  height: fit-content;
+  margin: 10px;
+}
+
+.left, .right {
+  width: 30.2%;
+  box-sizing:border-box;
+}
+
+.middle {
+  width: 35%;
+  box-sizing:border-box;
+}
+
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.center {
+  margin: 10px;
+  padding: 2em;
+}
+
+.row {
+  color: #F6FBF4;
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+}
+
+input, input:hover, input:focus, input:active {
+  background: transparent;
+  border: 0;
+  border-style: none;
+  border-color: transparent;
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none;
+}
+
+.input-box:active, .input-box:focus, .input-box:hover, .input-box{
+  background-color: #F6FBF4;
+  box-shadow:
+  0px 0px 10px rgba(0, 0, 0, 0.035),
+  0px 0px 80px rgba(0, 0, 0, 0.07);
+  height: 3em;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.inputWrapper label{
+  display:block;
+  color: #06283D;
+  margin-bottom: 8px;
+  text-align: start!important;
+}
+
+.btn {
+  margin-bottom: 8px; 
+  height: 3em;
+  width: 100%;
+  background-color: #06283D!important;
+  border: none;
+  border-radius: 10px;
+  color: #f6f6f6;
+  margin-top: 2em;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color: #03172B;
+}
+
+.text-header {
+  font-size: 25px;
+  color: #06283D;
+  margin-bottom: 34px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Damion', cursive;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.inner {
+  color: #06283D;
+}
+
+.inner p {
+  margin-top: 20px;
+}
+
+.shadow {
+  box-shadow:
+  0px 0px 10px rgba(0, 0, 0, 0.035),
+  0px 0px 80px rgba(0, 0, 0, 0.07);
+}
+
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: #F6FBF4;
+    display: flex;
+    align-items: center;
+}
+
+.item > .inner h3 {
+    margin-bottom: 20px;
+}
+
+.item > .inner p {
+    margin-top: 10px;
+}
+
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.check-button {
+    width: 26px;
+    height: 26px;
+
+    background: url('../assets/icon/check-outline.svg');
+    background-size: cover;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/icon/check-fill.svg');
+    background-size: cover;
+}
+
+.trash-button {
+    width: 26px;
+    height: 26px;
+
+    background: url('../assets/icon/trash-outline.svg');
+    background-size: cover;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/icon/trash-fill.svg');
+    background-size: cover;
+}
+
+.undo-button {
+    width: 26px;
+    height: 26px;
+
+    background: url('../assets/icon/undo-outline.svg');
+    background-size: cover;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/icon/undo-fill.svg');
+    background-size: cover;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.text-modal {
+  font-size: 20px;
+  color: #06283D;
+  margin-bottom: 34px;
+  text-align: center;
+  line-height: normal;
+}
+
+
+.delete-button {
+  margin-bottom: 8px; 
+  height: 3em;
+  width: 40%;
+  background-color: #D64A5D;
+  border: none;
+  border-radius: 10px;
+  color: #f6f6f6;
+  margin-top: 2em;
+  font-size: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.delete-button:hover {
+  background-color: #B33350;
+}
+
+.cancel-button {
+  margin-right: 20px;
+  margin-left: 2px;
+  margin-bottom: 8px; 
+  height: 3em;
+  width: 40%;
+  background-color: #0AAFD8;
+  border: none;
+  border-radius: 10px;
+  color: #f6f6f6;
+  margin-top: 2em;
+  font-size: 15px;
+}
+
+.cancel-button:hover {
+  background-color: #0785B5;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookshelf</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="text-container">
+      <h1>Bookshelf</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="column left center">
+        <h2 class="text-header">Selesai dibaca</h2>
+        <div class="inputWrapper">
+          <label for="search">Cari Judul Buku</label>
+          <input placeholder="Masukkan Judul" type="text" name="search" id="search-completed-books" class="input-box">
+        </div>
+        <div class="list-item" id="completed-books">
+        </div>
+      </div>
+      <div class="column middle center">
+        <h2 class="text-header">Detail buku</h2>
+        <form class="form" id="form" action="">
+          <div class="inputWrapper">
+            <label for="title">Judul</label>
+            <input placeholder="Masukkan Judul" type="text" name="title" id="title" class="input-box">
+          </div>
+          <div class="inputWrapper">
+            <label for="author">Penulis</label>
+            <input placeholder="Masukkan Nama" type="text" name="author" id="author" class="input-box">
+          </div>
+          <div class="inputWrapper">
+            <label for="year">Tahun</label>
+            <input placeholder="Masukkan Tahun" type="number" name="year" id="year" class="input-box">
+          </div>
+          <input type="submit" value="Submit" name="Submit" class="btn">
+        </form>
+      </div>
+      <div class="column right center">
+        <h2 class="text-header">Belum selesai dibaca</h2>
+        <div class="inputWrapper">
+          <label for="search">Cari Judul Buku</label>
+          <input placeholder="Masukkan Judul" type="text" name="search" id="search-books" class="input-box">
+        </div>
+        <div class="list-item" id="books">
+
+        </div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modal-content">
+          <h3 class="text-modal">Apakah anda yakin ingin menghapus buku ini?</h3>
+          <button class="delete-button">Hapus</button>
+          <button class="cancel-button">Batal</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/script.js"></script>
+</html>
+
